@@ -29,8 +29,8 @@ yarn add /photoeditor
 </template>
 
 <script setup>
-  import '@livebcdev0603/photoeditor/dist/photo-editor.css';
-  import PhotoEditor from '@livebcdev0603/photoeditor';
+  import '@superalive1005/photoeditor/dist/photo-editor.css';
+  import PhotoEditor from '@superalive1005/photoeditor';
 </script>
 ```
 
@@ -46,12 +46,12 @@ yarn add /photoeditor
 </template>
 
 <script>
-  import '@livebcdev0603/photoeditor/dist/photo-editor.css'
+  import '@superalive1005/photoeditor/dist/photo-editor.css'
   export default {
     name: 'your component',
     components:
       PhotoEditor: () => {
-      return import('@livebcdev0603/photoeditor').PhotoEditor
+      return import('@superalive1005/photoeditor').PhotoEditor
         });
       },
     },
