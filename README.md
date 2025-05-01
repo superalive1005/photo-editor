@@ -2,33 +2,21 @@
 
 ## A fully functional free online Photo Editor (works only in Chromium browsers for now)
 
-## A working example: https://matb85.github.io/PhotoEditor/
-
 ![ScreenShot](/screenshot.png)
 
 ### What's that?
 
-PhotoEditor is a Vue SPA utilizing [Element Plus](https://element-plus.org/), canvas filters and [Cropperjs](https://github.com/fengyuanchen/cropperjs).
+PhotoEditor is a Vue SPA utilizing [Element Plus](https://element-plus.org/), canvas filters and [Cropperjs]
 You can install the core components via npm and use it in your own project.
-
-### Usage - Spa
-
-Go to https://matb85.github.io/PhotoEditor/, upload a photo and start tweaking the sliders! Currently, there are 3 basic editing options:
-
-- applying [canvas filters](https://developer.mozilla.org/en-US/docs/WebAPI/CanvasRenderingContext2D/filter) (same as css filters: brightness,saturation, hue rotate, contrast, grayscale, sepia, invert)
-- applying instagram filters thanks to [Instagram.css](https://githubcom/picturepan2/instagram.css)
-- cropping and rotating thanks to [Cropperjs](https://github.comfengyuanchen/cropperjs)
-
-### Usage - Api
 
 #### Download and import PhotoEditor
 
 Of course you can download the editor via npm as an esm module. Please remember that PhotoEditor requires Vuex!
 
 ```bash
-npm i @matb85/photoeditor
-pnpm add @matb85/photoeditor
-yarn add @matb85/photoeditor
+npm i /photoeditor
+pnpm add /photoeditor
+yarn add /photoeditor
 ```
 
 - in a no ssr environment (e.g. Vue spa):
@@ -41,8 +29,8 @@ yarn add @matb85/photoeditor
 </template>
 
 <script setup>
-  import '@matb85/photoeditor/dist/photo-editor.css';
-  import PhotoEditor from '@matb85/photoeditor';
+  import '@livebcdev0603/photoeditor/dist/photo-editor.css';
+  import PhotoEditor from '@livebcdev0603/photoeditor';
 </script>
 ```
 
@@ -58,12 +46,12 @@ yarn add @matb85/photoeditor
 </template>
 
 <script>
-  import '@matb85/photoeditor/dist/photo-editor.css'
+  import '@livebcdev0603/photoeditor/dist/photo-editor.css'
   export default {
     name: 'your component',
     components:
       PhotoEditor: () => {
-      return import('@matb85/photoeditor').PhotoEditor
+      return import('@livebcdev0603/photoeditor').PhotoEditor
         });
       },
     },
